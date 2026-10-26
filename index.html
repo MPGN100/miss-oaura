@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11131b">
+  <title>Missão Aura</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+
+    <header class="hero">
+      <span class="tag">MISSÃO AURA</span>
+      <h1>Descubra sua <span>aura.</span></h1>
+      <p>
+        Conheça suas habilidades, descubra o que faz você
+        ser único e encontre uma missão que combine com você.
+      </p>
+    </header>
+
+    <form id="quizForm">
+      <section class="panel" id="formPanel">
+        <div class="section-heading">
+          <span class="step">01 — AUTOCONHECIMENTO</span>
+          <h2>Vamos começar?</h2>
+          <p class="muted">
+            Conte um pouco sobre você e escolha as respostas
+            que mais combinam com sua personalidade.
+          </p>
+        </div>
+
+        <div class="field">
+          <label for="nome">Como você se chama?</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome"
+            required
+            maxlength="80"
+            autocomplete="name"
+          >
+        </div>
+
+        <div class="field">
+          <label for="nascimento">Quando você nasceu?</label>
+          <input
+            type="date"
+            id="nascimento"
+            name="nascimento"
+            required
+          >
+        </div>
+
+        <div id="perguntas"></div>
+
+        <button type="submit" class="primary-btn">
+          Descobrir meu perfil <span aria-hidden="true">→</span>
+        </button>
+
+        <p class="privacy">
+          Não existe resposta certa ou errada. Seja você.
+        </p>
+      </section>
+    </form>
+
+    <section
+      id="resultado"
+      class="panel result hidden"
+      aria-live="polite"
+      aria-atomic="true">
+    </section>
+
+    <footer>
+      MISSÃO AURA <span>·</span> UMA JORNADA DE DESCOBERTA
+    </footer>
+ 
+</main>
+</body>
+</html>
+ 
